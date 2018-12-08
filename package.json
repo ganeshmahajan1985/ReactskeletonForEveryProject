@@ -31,7 +31,13 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "webpack": "^4.27.1",
+    "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4"
   }
 }

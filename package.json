@@ -1,0 +1,24 @@
+{
+  "name": "reactskeletonforeveryproject",
+  "version": "1.0.0",
+  "description": "This is skeleton for reactJS project. It includes webpack, redux store, login component.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshmahajan1985/ReactskeletonForEveryProject.git"
+  },
+  "keywords": [
+    "ReactJS",
+    "Webpack",
+    "Redux"
+  ],
+  "author": "Ganesh Prakash Mahajan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ganeshmahajan1985/ReactskeletonForEveryProject/issues"
+  },
+  "homepage": "https://github.com/ganeshmahajan1985/ReactskeletonForEveryProject#readme"
+}

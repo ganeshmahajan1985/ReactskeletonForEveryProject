@@ -20,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/ganeshmahajan1985/ReactskeletonForEveryProject/issues"
   },
-  "homepage": "https://github.com/ganeshmahajan1985/ReactskeletonForEveryProject#readme"
+  "homepage": "https://github.com/ganeshmahajan1985/ReactskeletonForEveryProject#readme",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-freeze": "^0.1.7",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-merge": "^4.1.4"
+  }
 }

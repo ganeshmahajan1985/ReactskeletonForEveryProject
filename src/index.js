@@ -1,6 +1,7 @@
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import { render } from 'react-dom'
+import React from 'react'
 
 render(
 	<h1 id='title'

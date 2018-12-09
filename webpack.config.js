@@ -10,6 +10,18 @@ module.exports = {
     output: {
         filename: "assets/[name].bundle.js"
     },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /node_modules/, // you may add "vendor.js" here if you want to
+                    name: "vendor",
+                    chunks: "initial",
+                    enforce: true
+                }
+            }
+        }
+    },
     mode: "development",
     devServer: {
         contentBase: path.join(__dirname, 'dist'),

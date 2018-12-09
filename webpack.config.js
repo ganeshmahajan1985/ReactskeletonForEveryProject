@@ -1,12 +1,16 @@
 var path = require('path')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var package = require('./package.json');
 
 module.exports = {
-    entry: "./src/index.js",
-    output: {
-        filename: "assets/bundle.js"
+    entry: {
+        app: "./src/index.js",
+        vendor: Object.keys(package.dependencies)
     },
-    watch:true,
+    output: {
+        filename: "assets/[name].bundle.js"
+    },
+    watch: true,
     mode: "development",
     devServer: {
         contentBase: path.join(__dirname, 'dist'),

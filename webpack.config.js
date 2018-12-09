@@ -10,7 +10,6 @@ module.exports = {
     output: {
         filename: "assets/[name].bundle.js"
     },
-    watch: true,
     mode: "development",
     devServer: {
         contentBase: path.join(__dirname, 'dist'),

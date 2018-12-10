@@ -1,7 +1,8 @@
-var path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 var package = require('./package.json');
-var CleanWebpackPlugin = require('clean-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -36,7 +37,10 @@ module.exports = {
             title: 'My Awesome application',
             template: './src/index.html',
             filename: './index.html' //relative to root of the application
-        })
+        }),
+        new webpack.LoaderOptionsPlugin({
+            minimize: true
+        }),
     ],
     module: {
         rules: [

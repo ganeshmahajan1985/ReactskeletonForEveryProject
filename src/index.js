@@ -4,10 +4,11 @@ import { render } from 'react-dom'
 import React from 'react'
 
 render(
-	<h1 id='title'
-		className='header'
-		style={{backgroundColor: 'orange', color: 'white', fontFamily: 'verdana'}}>
-	Hello World	
-	</h1>,
+	<Provider store={store}>
+		<button store={store}>
+			Login
+		</button>
+	</Provider>,
+
 	document.getElementById('react-container')
 )

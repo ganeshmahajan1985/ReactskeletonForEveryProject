@@ -42,14 +42,17 @@ module.exports = {
             minimize: true
         }),
     ],
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
-                exclude: /(node_modules)/,
-                loader: "babel-loader",
+                test: /\.jsx?$/,
+                exclude: /(node_modules|bower_components)/,
+                loader: 'babel-loader',
                 query: {
-                    presets: ["env", "react"]
+                    presets: ['react', 'es2015', 'stage-3']
                 }
             }
         ]

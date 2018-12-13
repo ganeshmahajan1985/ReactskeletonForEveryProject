@@ -38,14 +38,17 @@ module.exports = {
             filename: './index.html' //relative to root of the application
         })
     ],
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     module: {
         rules: [
             {
-                test: /\.jsx$/,
-                exclude: /(node_modules)/,
-                loader: "babel-loader",
+                test: /\.jsx?$/,
+                exclude: /(node_modules|bower_components)/,
+                loader: 'babel-loader',
                 query: {
-                    presets: ["env", "react"]
+                    presets: ['react', 'es2015', 'stage-3']
                 }
             }
         ]
